@@ -1,8 +1,11 @@
 class pckomponenter():
-    def __init__(self, komponentnavn, produsent, pris):
+    def __init__(self, Type, komponentnavn, produsent, pris):
+        self.Type = Type
         self.komponentnavn = komponentnavn
         self.produsent = produsent
         self.pris = pris
 
     def skrivut(self):
-        return f"Komponent: {self.komponentnavn}, \n Produsent: {self.produsent}, \n Pris på komponentet: {self.pris} kr"
+        print("Komponentnavn: ", self.komponentnavn)
+        print("Produsent: ", self.produsent)
+        print("Pris: ", self.pris)
